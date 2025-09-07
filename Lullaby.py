@@ -13,7 +13,7 @@ def domain_info(target):
     except Exception as e:
         print("WHOIS lookup failed:",e)
 
-    print(f"\n[+] Gathering DNS records fofr: {target}")
+    print(f"\n[+] Gathering DNS records for: {target}")
     try:
         for record in ["A", "AAA", "MX", "NS", "TXT"]:
             try:
